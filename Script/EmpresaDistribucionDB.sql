@@ -120,7 +120,7 @@ insert into Empleado values(13,'Noel','Pérez','Martínez','jnoel27@hotmail.com'
 insert into Empleado values(14,'José','Diego','Antonio','jdanton@yahoo.com.mx');
 insert into Empleado values(15,'Ivonne','Mercado','García','ivonnegy@yahoo.com.mx');
 insert into Empleado values(16,'Christopher','Calderón','Gutierrez','chcalgu@gmail.com');
-insert into Empleado values(17,'Armando','Paredes','Lugo','armandoparedes@hotmail.com');
+insert into Empleado values(17,'Armando','Paredes','Lugo','arms@hotmail.com');
 insert into Empleado values(18,'Nil','Cruz','Ochoa','nil997547@hotmail.com');
 insert into Empleado values(19,'Nadia','Quiros','Puertas','puertasq@hotmail.com');
 
@@ -276,8 +276,7 @@ create table Producto(
 	precio float(25),
 	marca varchar(25)
 );
-/*Faltan insertar 18 productos (PROCURAR NO COLOCAR PRECIOS MUY VARIADOS, DE PREFERENCIA
-MULTIPLOS DE 100, YA QUE SE USAN EN LA TABLA DE PEDIDOS)*/
+
 insert into Producto values(0,'COCA',100,'bebidas',500, 'COCACOLA');
 insert into Producto values(1,'TAKIS',100,'botana',200, 'BARCEL');
 insert into Producto values(2,'MARIAS',100,'pan',500,'GAMESA');
@@ -342,7 +341,7 @@ SELECT * FROM Pedido;
 
 create table Metodo(
 	idMetodo int(25) primary key,
-	numTargeta int(10),
+	numTargeta int(11),
 	nip varchar(5),
 	vencimiento date,
 	idDireccion int(25),
@@ -765,5 +764,5 @@ insert into Bitacora values(14,3,'registro de pedido','2020-06-04','registro');
 insert into Bitacora values(15,3,'registro de pedido','2020-05-03','registro');
 insert into Bitacora values(16,4,'modificacion de pedido','2020-06-26','modificacion');
 insert into Bitacora values(17,5,'registro de pedido','2020-06-20','registro');
-insert into Bitacora values(18,6,cancelacion de pedido'','2020-05-01','cancelacion');
+insert into Bitacora values(18,6,'cancelacion de pedido','2020-05-01','cancelacion');
 insert into Bitacora values(19,7,'registro de pedido','2020-05-18','registro');
